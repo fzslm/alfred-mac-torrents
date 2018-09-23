@@ -1,38 +1,70 @@
 {
-  "name": "alfred-mac-torrents",
-  "version": "1.0.0",
-  "description": "workflow for Alfred3 to crawl mac-torrents.com and return .torrent",
-  "license": "MIT",
-  "repository": "gemoroy/alfred-mac-torrents",
+  "_from": "alfred-mac-torrents",
+  "_id": "alfred-mac-torrents@1.0.0",
+  "_inBundle": false,
+  "_integrity": "sha1-hC35LtpMEebRLlmgsJuMis2Bqxw=",
+  "_location": "/alfred-mac-torrents",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "alfred-mac-torrents",
+    "name": "alfred-mac-torrents",
+    "escapedName": "alfred-mac-torrents",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmjs.org/alfred-mac-torrents/-/alfred-mac-torrents-1.0.0.tgz",
+  "_shasum": "842df92eda4c11e6d12e59a0b09b8c8acd81ab1c",
+  "_spec": "alfred-mac-torrents",
+  "_where": "/Users/fzslm",
   "author": {
     "name": "Sergey Baranov",
     "email": "mr.gemoroy@icloud.com",
     "url": "https://github.com/gemoroy"
   },
+  "bugs": {
+    "url": "https://github.com/gemoroy/alfred-mac-torrents/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "alfy": "^0.6.0"
+  },
+  "deprecated": false,
+  "description": "workflow for Alfred3 to crawl mac-torrents.com and return .torrent",
+  "devDependencies": {
+    "alfy-test": "^0.3.0",
+    "ava": "^0.18.0",
+    "xo": "^0.17.0"
+  },
   "engines": {
     "node": ">=4"
-  },
-  "scripts": {
-    "test": "xo && ava",
-    "postinstall": "alfy-init",
-    "preuninstall": "alfy-cleanup"
   },
   "files": [
     "index.js",
     "icon.png",
     "info.plist"
   ],
+  "homepage": "https://github.com/gemoroy/alfred-mac-torrents#readme",
   "keywords": [
     "alfred",
     "workflow",
     "alfy"
   ],
-  "dependencies": {
-    "alfy": "^0.6.0"
+  "license": "MIT",
+  "name": "alfred-mac-torrents",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gemoroy/alfred-mac-torrents.git"
   },
-  "devDependencies": {
-    "alfy-test": "^0.3.0",
-    "ava": "^0.18.0",
-    "xo": "^0.17.0"
-  }
+  "scripts": {
+    "postinstall": "alfy-init",
+    "preuninstall": "alfy-cleanup",
+    "test": "xo && ava"
+  },
+  "version": "1.0.0"
 }

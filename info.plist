@@ -2,10 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>name</key>
-	<string>MacTorrents</string>
 	<key>bundleid</key>
-	<string>io.gemoroy.mactorrents</string>
+	<string>me.fzslm.io.gemoroy.mactorrents</string>
 	<key>category</key>
 	<string>Internet</string>
 	<key>connections</key>
@@ -14,7 +12,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>865D5B0F-1FAE-4AE9-924C-2BAAF1A3F141</string>
+				<string>0ADC545A-4286-47F8-9295-14D661579795</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -24,34 +22,52 @@
 			</dict>
 		</array>
 	</dict>
+	<key>createdby</key>
+	<string>Faiz Saleem (adapted from Sergey Baranov)</string>
+	<key>description</key>
+	<string>Downloads torrents from MacTorrent. Based on Sergey Baranov's workflow.</string>
 	<key>disabled</key>
 	<false/>
+	<key>name</key>
+	<string>MacTorrents Direct</string>
 	<key>objects</key>
 	<array>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>browser</key>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>mkdir -p /var/tmp/mtd
+cd /var/tmp/mtd
+rm *.torrent
+/usr/local/bin/wget "$1"
+open *.torrent</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
 				<string></string>
-				<key>spaces</key>
-				<string></string>
-				<key>url</key>
-				<string>{query}</string>
-				<key>utf8</key>
-				<true/>
+				<key>type</key>
+				<integer>0</integer>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
+			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
-			<string>865D5B0F-1FAE-4AE9-924C-2BAAF1A3F141</string>
+			<string>0ADC545A-4286-47F8-9295-14D661579795</string>
 			<key>version</key>
-			<integer>1</integer>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
 				<key>alfredfiltersresults</key>
 				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
 				<key>argumenttype</key>
 				<integer>0</integer>
 				<key>escaping</key>
@@ -67,7 +83,7 @@
 				<key>queuemode</key>
 				<integer>2</integer>
 				<key>runningsubtext</key>
-				<string>Search for {query} in progress...</string>
+				<string>Searching...</string>
 				<key>script</key>
 				<string>./node_modules/.bin/run-node index.js "$1"</string>
 				<key>scriptargtype</key>
@@ -75,9 +91,9 @@
 				<key>scriptfile</key>
 				<string>index.js</string>
 				<key>subtext</key>
-				<string>Search with mac-torrents.com in alfred</string>
+				<string></string>
 				<key>title</key>
-				<string>Search mac-torrents.com for '{query}'</string>
+				<string>Search MacTorrents for '{query}'</string>
 				<key>type</key>
 				<integer>0</integer>
 				<key>withspace</key>
@@ -95,10 +111,10 @@
 	<string></string>
 	<key>uidata</key>
 	<dict>
-		<key>865D5B0F-1FAE-4AE9-924C-2BAAF1A3F141</key>
+		<key>0ADC545A-4286-47F8-9295-14D661579795</key>
 		<dict>
 			<key>xpos</key>
-			<integer>150</integer>
+			<integer>180</integer>
 			<key>ypos</key>
 			<integer>10</integer>
 		</dict>
@@ -110,5 +126,9 @@
 			<integer>10</integer>
 		</dict>
 	</dict>
+	<key>version</key>
+	<string>1.0.0</string>
+	<key>webaddress</key>
+	<string></string>
 </dict>
 </plist>

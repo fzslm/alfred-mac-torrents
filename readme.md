@@ -1,22 +1,18 @@
-# alfred-mac-torrents [![Build Status](https://travis-ci.org/gemoroy/alfred-mac-torrents.svg?branch=master)](https://travis-ci.org/gemoroy/alfred-mac-torrents)
+# alfred-mac-torrents
+Alfred workflow that downloads torrents from MacTorrent. Based on Sergey Baranov's [original workflow](https://github.com/gemoroy/alfred-mac-torrents).
 
-> Workflow for Alfred3 to crawl mac-torrents.com and return torrent file.
-
+Heavily based on the original workflow, but this one opens torrents directly in your torrent application instead of opening them in the browser. 
 
 ## Install
 
-```
-$ npm install --global alfred-mac-torrents
-```
+See Releases tab.
 
 *Requires [Node.js](https://nodejs.org) 4+ and the Alfred [Powerpack](https://www.alfredapp.com/powerpack/).*
-
 
 ## Usage
 
 In Alfred, type `mtd`, <kbd>Enter</kbd>, and your query.
 
-
 ## License
 
-MIT © [](http://gemoroy.io)
+MIT
